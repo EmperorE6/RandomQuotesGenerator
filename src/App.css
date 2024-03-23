@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body{
+  margin: 0;
   min-height: 100vh;
+  text-align: center;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: url(bg.jpg);
+}
+.quote_container{
+  width:800px;
+  height: 310px;
+  background-color: rgb(142, 153, 142);
+  margin:0 auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  opacity: 0.9;
+}
+.quote_text{
+  margin: 0 auto;
+  width:700px;
+  height: 170px;
+ font-size:45px;
+ font-weight: bold;
+padding-top: 15px;
+}
+.quote_author{
+  font-size:25px;
+  margin-top: 15px;
+}
+.share_new{
+padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-top:20px;
+}
+.share_quote button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  cursor: pointer;
+font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #333;
+  outline: none;
+  padding: 0.5rem 1.8rem 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+button:hover {
+  filter: brightness(110%);
 }
 
-.App-link {
-  color: #61dafb;
+.quote_text img{
+  height: 50px;
+  margin-right: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.share_quote img{
+  height: 30px;
+  border-radius: 15px;
 }
